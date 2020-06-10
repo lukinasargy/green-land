@@ -1,0 +1,12 @@
+@import "_mixins/font-face";
+
+@include font-face("kaushan-script", "../fonts/kaushan-script/kaushan-script");
+@include font-face("bettertogether", "../fonts/bettertogether/bettertogether");
+
+//@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+@include font-face("fontawesome", "../libs/fontawesome/webfonts/fa-solid-900");
+
+
+

@@ -1,0 +1,256 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+//Extra large: ≥1200px
+@include media-breakpoint-down(xl) {}
+
+//Large: ≥992px
+@include media-breakpoint-down(lg) {}
+
+//Medium: ≥768px
+@include media-breakpoint-down(md) {
+  .container {
+    width: 100%;
+    max-width: 300px;
+  }
+  .mobile {
+    display: block;
+  }
+  .none {
+    display: none;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 44px;
+  }
+  .br-none {
+    display: none;
+  }
+
+  //  .br-mobile {
+  //    display: block;
+  //  }
+  .header {
+    z-index: 3;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 18px 0;
+
+    &-title {
+      display: inline-block;
+      float: left;
+      line-height: 34px;
+    }
+
+    &-btn {
+      display: inline-block;
+      float: right;
+      width: 145px;
+      font-size: 13px;
+      line-height: 34px;
+      padding: 0 12px;
+      margin-top: 0;
+      text-align: right;
+      border-radius: 10px;
+      background-color: #427f20;
+    }
+
+  }
+  .first {
+    padding-top: 50px;
+    padding-bottom: 45px;
+
+    &-logo {
+      font-size: 76px;
+      background: none;
+      padding-bottom: 0;
+    }
+
+    &-left {
+      width: 100%;
+      position: relative;
+      &--xmas {
+        padding-top: 65px;
+      }
+      &:after {
+        display: none;
+      }
+
+    }
+
+    &-left--xmas:before {
+      position: absolute;
+      content: '';
+      background-image: url(../img/xmas-1.png);
+      background-repeat: no-repeat;
+      top: -40px;
+      left: -10px;
+      width: 320px;
+      height: 105px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-right {
+      display: none;
+    }
+
+    &-text {
+      padding-top: 0;
+      text-align: center;
+      width: 280px;
+      &--large {
+        padding-bottom: 0;
+        font-size: 18px;
+        width: 100%;
+      }
+    }
+    &-list {
+      margin-left: 65px;
+    }
+    &-product {
+      display: none;
+
+      &--mobile{
+        display: block;
+        position: relative;
+        top: 0;
+        left: 100px;
+        width: 100px;
+        margin: 30px 0;
+      }
+      &--xmas:after {
+          display: block;
+          position: absolute;
+          content: '';
+          background-image: url(../img/xmas-2.png);
+          background-repeat: no-repeat;
+          top: -40px;
+          left: -45px;
+          width: 163px;
+          height: 156px;
+          z-index: 2;
+        }
+    }
+  }
+  .second {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-video {
+      width: 100%;
+      height: auto;
+    }
+    &-btn {
+      margin-top: 30px;
+    }
+  }
+  .third {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &-left {
+      width: 100%;
+    }
+    &-right {
+      width: 100%;
+    }
+  }
+.fourth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .fifth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sixth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .seventh {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .order {
+    margin-top: 30px;
+    width: 300px;
+    font-size: 16px;
+    padding: 40px 20px;
+    height: 447px;
+
+    //            float: none;
+    &-input {
+      height: 48px;
+      margin-bottom: 30px;
+    }
+
+    &:before {
+      left: 0;
+      bottom: 830px;
+    }
+  }
+
+  .price {
+    margin: 26px auto;
+
+    &_old {
+      margin-top: 14px;
+      font-size: 18px;
+    }
+
+    &_new {
+      font-size: 20px;
+    }
+  }
+}
+
+//Small: ≥576px
+@include media-breakpoint-down(sm) {}
+
+//Extra small: >0
+@include media-breakpoint-down(xs) {}
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
+@include media-breakpoint-up(xs) {}
+
+//Small: ≤576px
+@include media-breakpoint-up(sm) {}
+
+//Medium: ≤768px
+@include media-breakpoint-up(md) {}
+
+//Large: ≤992px
+@include media-breakpoint-up(lg) {}
+
+//Extra large: ≤1200px
+@include media-breakpoint-up(xl) {}
